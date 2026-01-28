@@ -1,0 +1,15 @@
+name: Mi Primer Workflow
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  saludo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mensaje de bienvenida
+        run: echo "¡Hola! Tu Action funciona correctamente"
+
+      - name: Mostrar fecha
+        run: date
